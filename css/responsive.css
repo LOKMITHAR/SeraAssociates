@@ -1,0 +1,342 @@
+/* ==========================================================================
+   SERA ASSOCIATES — Responsive Architecture Grid & Breakpoints
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Large Desktop (1440px +)
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 1440px) {
+  :root {
+    --margin-desktop: 6vw;
+  }
+
+  .display-title {
+    font-size: 7rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Desktop & Laptops (1024px - 1439px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+  .hero-brand-statement {
+    font-size: 6.5rem;
+  }
+  
+  .projects-editorial-grid {
+    gap: 3rem 2rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet (768px - 1023px) — 8 Column Grid Layout
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1023px) {
+  :root {
+    --header-height: 76px;
+    --margin-desktop: 4vw;
+  }
+
+  /* Adjust Grid Columns for Tablet */
+  .projects-editorial-grid {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 2.5rem 1.5rem;
+  }
+
+  .project-card.col-span-7,
+  .project-card.col-span-5 {
+    grid-column: span 8 !important; /* Stack projects vertically on tablet */
+  }
+
+  .intro-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .intro-stat-col {
+    grid-column: span 4;
+  }
+
+  /* SERA Acronym 2x2 Grid on Tablet */
+  .sera-acronym-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .sera-letter-card {
+    min-height: 340px;
+    padding: 2.25rem 1.5rem;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .philosophy-card {
+    grid-column: span 8;
+  }
+
+  .capabilities-list {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .capability-item {
+    grid-column: span 4;
+  }
+
+  .contact-layout-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .contact-info-col,
+  .contact-form-col {
+    grid-column: span 8;
+  }
+
+  .project-detail-header {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .project-detail-title-col {
+    grid-column: span 8;
+  }
+
+  .project-detail-meta-col {
+    grid-column: span 8;
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid var(--line-color);
+    padding-top: 1.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .project-narrative-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .project-narrative-col,
+  .project-specs-col {
+    grid-column: span 8;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .footer-brand-col {
+    grid-column: span 8;
+  }
+
+  .footer-nav-col {
+    grid-column: span 4;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Devices (320px - 767px) — 4 Column Grid Layout
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  :root {
+    --header-height: 68px;
+    --margin-desktop: 20px;
+    --margin-mobile: 20px;
+  }
+
+  /* Header & Navigation */
+  .nav-menu {
+    display: none; /* Hidden on mobile; drawer is used instead */
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .brand-logo {
+    font-size: 0.85rem;
+    letter-spacing: 0.16em;
+  }
+
+  /* Hero Section Mobile */
+  .hero-section {
+    min-height: 85vh;
+    padding-top: calc(var(--header-height) + 1.5rem);
+    padding-bottom: 2rem;
+  }
+
+  .hero-brand-statement {
+    font-size: 3.2rem;
+    line-height: 1.0;
+    margin-bottom: 1rem;
+  }
+
+  .hero-positioning {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .hero-image-viewport {
+    height: 38vh;
+    margin-top: 2rem;
+  }
+
+  .hero-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  /* Section Titles & Quotes */
+  .display-title {
+    font-size: 2.75rem;
+  }
+
+  .manifesto-quote {
+    font-size: 1.65rem;
+    line-height: 1.35;
+  }
+
+  .intro-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  .intro-stat-col {
+    grid-column: span 4;
+  }
+
+  /* Projects Grid Mobile — Single Column Full Width Cards */
+  .projects-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .projects-editorial-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+
+  .project-card.col-span-7,
+  .project-card.col-span-5,
+  .project-card.col-span-12 {
+    grid-column: span 4 !important;
+  }
+
+  .project-title {
+    font-size: 1.15rem;
+  }
+
+  .project-category-location {
+    font-size: 0.75rem;
+  }
+
+  /* SERA Acronym Cards Mobile — Stacked 1 Column */
+  .sera-acronym-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .sera-letter-card {
+    grid-column: span 4;
+    min-height: 260px;
+    padding: 1.75rem 1.25rem;
+  }
+
+  .sera-letter-big {
+    font-size: 4.5rem;
+  }
+
+  .sera-modal-content {
+    padding: 2rem 1.5rem;
+  }
+
+  /* Profile Page Mobile */
+  .profile-hero {
+    padding-top: calc(var(--header-height) + 2rem);
+    padding-bottom: 3rem;
+  }
+
+  .profile-intro-text {
+    font-size: 1.75rem;
+  }
+
+  .philosophy-grid,
+  .capabilities-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .philosophy-card,
+  .capability-item {
+    grid-column: span 4;
+  }
+
+  .capability-item {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Project Detail Mobile */
+  .project-hero-media {
+    max-height: 50vh;
+  }
+
+  .project-hero-media img {
+    height: 50vh;
+  }
+
+  .project-narrative-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+
+  .project-narrative-col,
+  .project-specs-col {
+    grid-column: span 4;
+  }
+
+  .project-specs-col {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .project-prev-next-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-project-btn.next {
+    border-left: none;
+    border-top: 1px solid var(--line-color);
+    text-align: left;
+  }
+
+  /* Contact Page Mobile */
+  .contact-layout-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contact-info-col,
+  .contact-form-col {
+    grid-column: span 4;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+
+  /* Footer Mobile */
+  .footer-top-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-brand-col,
+  .footer-nav-col {
+    grid-column: span 4;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

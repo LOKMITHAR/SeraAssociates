@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="SERA ASSOCIATES is an architecture and construction practice focused on thoughtful residential spaces, homes, spatial design, and authentic material construction in Tuticorin, India.">
+  <meta name="keywords"
+    content="SERA ASSOCIATES, Architecture, Construction, Residential Architecture, Spatial Design, Homes, Modern Architecture Studio, Tuticorin">
+  <meta name="author" content="SERA ASSOCIATES">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="SERA ASSOCIATES — Architecture & Construction">
+  <meta property="og:description"
+    content="Architecture, spaces and thoughtful construction. Specialized residential design and practice based in Tuticorin, India.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.seraassociates.com">
+
+  <title>SERA ASSOCIATES — Architecture & Construction</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="SERA ASSOCIATES Homepage">
+        SERA ASSOCIATES
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html#work" class="nav-link active">WORK</a></li>
+          <li><a href="profile.html" class="nav-link">PROFILE</a></li>
+          <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Navigation Drawer Toggle -->
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" role="dialog" aria-label="Mobile menu">
+    <ul class="mobile-menu-links">
+      <li><a href="index.html#work">WORK</a></li>
+      <li><a href="profile.html">PROFILE</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">SERA ASSOCIATES</div>
+      <p style="font-size: 0.85rem;">Architecture &amp; Thoughtful Construction<br>Tuticorin, India</p>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section container" aria-label="Hero">
+      <div class="hero-main-content reveal-on-scroll">
+        <h1 class="hero-brand-statement">SERA ASSOCIATES</h1>
+        <p class="hero-positioning">
+          Architecture, spaces and thoughtful construction.
+        </p>
+      </div>
+
+      <div class="hero-image-viewport reveal-on-scroll delay-200" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85"
+          alt="SERA ASSOCIATES Hero Residential Architecture" />
+      </div>
+
+      <div class="hero-bottom-bar reveal-on-scroll delay-300">
+        <div class="hero-meta-label">RESIDENTIAL ARCHITECTURE &amp; PRACTICE &bull; TUTICORIN</div>
+        <div class="scroll-indicator">
+          <span>EXPLORE WORK</span>
+          <div class="scroll-indicator-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL MANIFESTO INTRO -->
+    <section class="intro-section section-padding border-top-line" aria-label="Manifesto">
+      <div class="container">
+        <div class="section-title reveal-on-scroll">MANIFESTO &amp; IDENTITY</div>
+        <blockquote class="manifesto-quote reveal-on-scroll">
+          "SERA ASSOCIATES is an architecture and construction practice focused on creating <span
+            class="highlight-serif">considered spaces</span> that respond with quiet precision to <span
+            class="highlight-serif">people</span>, <span class="highlight-serif">place</span> and honest <span
+            class="highlight-serif">materiality</span>."
+        </blockquote>
+
+        <div class="intro-grid">
+          <div class="intro-stat-col reveal-on-scroll delay-100">
+            <div class="intro-stat-num">01.</div>
+            <div class="intro-stat-label">Spatial Intelligence</div>
+            <p style="font-size: 0.95rem; margin-top: 0.5rem;">Proportional clarity, volume, and natural light chimney
+              systems.</p>
+          </div>
+          <div class="intro-stat-col reveal-on-scroll delay-200">
+            <div class="intro-stat-num">02.</div>
+            <div class="intro-stat-label">Material Discipline</div>
+            <p style="font-size: 0.95rem; margin-top: 0.5rem;">Honest timber, sadahalli stone, wire-cut brick, and
+              board-formed concrete.</p>
+          </div>
+          <div class="intro-stat-col reveal-on-scroll delay-300">
+            <div class="intro-stat-num">03.</div>
+            <div class="intro-stat-label">End-to-End Craft</div>
+            <p style="font-size: 0.95rem; margin-top: 0.5rem;">Seamless execution connecting architectural concept with
+              construction mastery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK (FEATURED PROJECTS) -->
+    <section id="work" class="section-padding border-top-line" aria-label="Selected Work">
+      <div class="container">
+        <div class="projects-header reveal-on-scroll">
+          <div>
+            <div class="section-title">PORTFOLIO</div>
+            <h2 class="display-title">SELECTED WORK</h2>
+          </div>
+          <p style="max-width: 380px; font-size: 0.95rem;">
+            Curated private residences, pavilions, and courtyard homes designed and constructed across South India.
+          </p>
+        </div>
+
+        <!-- Dynamic Editorial Grid Container -->
+        <div id="featured-projects-grid" class="projects-editorial-grid">
+          <!-- Populated by js/main.js using PROJECTS_DATA -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SERA IDENTITY SECTION (S - E - R - A) -->
+    <section class="sera-identity-section section-padding" aria-label="SERA Identity">
+      <div class="container">
+        <div class="section-title reveal-on-scroll">PRACTICE IDEOLOGY</div>
+        <div class="reveal-on-scroll">
+          <h2 class="display-title" style="color: var(--text-light);">THE SERA FRAMEWORK</h2>
+          <!-- <p style="color: var(--text-light-muted); max-width: 600px; margin-top: 1rem;">
+            Hover and select each letter to explore the core pillars that guide every architectural intervention at SERA
+            ASSOCIATES.
+          </p> -->
+        </div>
+
+        <div class="sera-acronym-grid">
+
+          <!-- Letter S -->
+          <article class="sera-letter-card reveal-on-scroll delay-100" data-letter="S">
+            <div class="sera-letter-big"><span>S</span></div>
+            <div>
+              <div class="sera-letter-concept">SPATIAL</div>
+              <div class="sera-letter-desc">Spatial intelligence &amp; volumetric clarity.</div>
+            </div>
+            <div class="sera-letter-footer">
+              <span>EXPLORE S</span>
+              <span>&rarr;</span>
+            </div>
+          </article>
+
+          <!-- Letter E -->
+          <article class="sera-letter-card reveal-on-scroll delay-200" data-letter="E">
+            <div class="sera-letter-big"><span>E</span></div>
+            <div>
+              <div class="sera-letter-concept">ENVIRONMENTAL</div>
+              <div class="sera-letter-desc">Climatic response, passive cooling &amp; site microclimate.</div>
+            </div>
+            <div class="sera-letter-footer">
+              <span>EXPLORE E</span>
+              <span>&rarr;</span>
+            </div>
+          </article>
+
+          <!-- Letter R -->
+          <article class="sera-letter-card reveal-on-scroll delay-300" data-letter="R">
+            <div class="sera-letter-big"><span>R</span></div>
+            <div>
+              <div class="sera-letter-concept">RESTRAINED</div>
+              <div class="sera-letter-desc">Material honesty &amp; conservative approach.</div>
+            </div>
+            <div class="sera-letter-footer">
+              <span>EXPLORE R</span>
+              <span>&rarr;</span>
+            </div>
+          </article>
+
+          <!-- Letter A -->
+          <article class="sera-letter-card reveal-on-scroll delay-400" data-letter="A">
+            <div class="sera-letter-big"><span>A</span></div>
+            <div>
+              <div class="sera-letter-concept">ARCHITECTURAL</div>
+              <div class="sera-letter-desc">Precision construction &amp; direct execution oversight.</div>
+            </div>
+            <div class="sera-letter-footer">
+              <span>EXPLORE A</span>
+              <span>&rarr;</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="footer-brand-title">SERA ASSOCIATES</div>
+          <p style="color: var(--text-light-muted); max-width: 420px; font-size: 0.95rem;">
+            An architecture and construction practice creating considered residential spaces, homes, and spatial design
+            with spatial restraint and material authenticity.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <div class="footer-nav-title">NAVIGATION</div>
+          <ul class="footer-links">
+            <li><a href="index.html#work">Selected Work</a></li>
+            <li><a href="profile.html">Studio Profile</a></li>
+            <li><a href="contact.html">Contact Practice</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <div class="footer-nav-title">LOCATION &amp; SOCIAL</div>
+          <ul class="footer-links">
+            <li><span>Tuticorin, Tamil Nadu, India</span></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram &rarr;</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 SERA ASSOCIATES. All Rights Reserved.</div>
+        <div>Designed &amp; Built with Architectural Precision.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

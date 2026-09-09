@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inquire about residential architecture and construction projects with SERA ASSOCIATES in Tuticorin, India.">
+  <title>CONTACT — SERA ASSOCIATES</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header scrolled" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="SERA ASSOCIATES Homepage">
+        SERA ASSOCIATES
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html#work" class="nav-link">WORK</a></li>
+          <li><a href="profile.html" class="nav-link">PROFILE</a></li>
+          <li><a href="contact.html" class="nav-link active">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" role="dialog" aria-label="Mobile menu">
+    <ul class="mobile-menu-links">
+      <li><a href="index.html#work">WORK</a></li>
+      <li><a href="profile.html">PROFILE</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+
+    <section class="contact-hero container section-padding" aria-label="Contact Studio">
+      <div class="section-title reveal-on-scroll">INQUIRIES</div>
+      <h1 class="display-title reveal-on-scroll delay-100" style="margin-bottom: 4rem; max-width: 1100px;">
+        LET'S BUILD SOMETHING CONSIDERED.
+      </h1>
+
+      <div class="contact-layout-grid">
+        
+        <!-- Studio Information Column -->
+        <div class="contact-info-col reveal-on-scroll delay-200">
+          <div class="contact-detail-block">
+            <div class="contact-detail-label">STUDIO LOCATION</div>
+            <div class="contact-detail-value">
+              SERA ASSOCIATES<br>
+              #42 Harbour Bypass Road<br>
+              Tuticorin, Tamil Nadu 628001<br>
+              India
+            </div>
+          </div>
+
+          <div class="contact-detail-block">
+            <div class="contact-detail-label">COMMISSION INQUIRIES</div>
+            <!-- NOTE: Placeholder email for demonstration -->
+            <div class="contact-detail-value">
+              <a href="mailto:hello@seraassociates.com">hello@seraassociates.com</a>
+            </div>
+            <div style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.25rem;">
+              +91 (0461) 234 8900
+            </div>
+          </div>
+
+          <div class="contact-detail-block">
+            <div class="contact-detail-label">SOCIAL &amp; MEDIA</div>
+            <div class="contact-detail-value" style="font-size: 1.05rem;">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram &rarr;</a><br>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Form Column -->
+        <div class="contact-form-col reveal-on-scroll delay-300">
+          <form id="sera-contact-form" novalidate>
+            
+            <div class="form-group">
+              <label for="user_name" class="form-label">NAME *</label>
+              <input type="text" id="user_name" name="name" class="form-input" placeholder="Your full name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="user_email" class="form-label">EMAIL ADDRESS *</label>
+              <input type="email" id="user_email" name="email" class="form-input" placeholder="your.email@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="user_phone" class="form-label">PHONE NUMBER</label>
+              <input type="tel" id="user_phone" name="phone" class="form-input" placeholder="+91 98765 43210" />
+            </div>
+
+            <div class="form-group">
+              <label for="project_type" class="form-label">PROJECT TYPOLOGY</label>
+              <select id="project_type" name="project_type" class="form-select">
+                <option value="Residential Architecture">New Single-Family Residence</option>
+                <option value="Tropical Pavilion / Villa">Tropical Pavilion / Estate Villa</option>
+                <option value="Heritage Restoration">Heritage Restoration &amp; Addition</option>
+                <option value="Spatial Interior Architecture">Interior Architecture &amp; Spatial Design</option>
+                <option value="Other Inquiries">Other Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="user_message" class="form-label">PROJECT SCOPE &amp; DETAILS *</label>
+              <textarea id="user_message" name="message" class="form-textarea" placeholder="Tell us about your plot location, timeline, and spatial requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">
+              <span>SEND INQUIRY</span>
+              <span>&rarr;</span>
+            </button>
+
+          </form>
+
+          <!-- Animated Submission Success Toast -->
+          <div id="contact-success-state" class="form-success-message" role="alert">
+            <h3 style="font-size: 1.5rem; font-weight: 500; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">
+              INQUIRY RECEIVED
+            </h3>
+            <p style="font-size: 1rem; color: var(--text-muted);">
+              Thank you for reaching out to SERA ASSOCIATES. Our architectural studio will review your project requirements and respond within two business days.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="footer-brand-title">SERA ASSOCIATES</div>
+          <p style="color: var(--text-light-muted); max-width: 420px; font-size: 0.95rem;">
+            Architecture, spaces and thoughtful construction.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <div class="footer-nav-title">NAVIGATION</div>
+          <ul class="footer-links">
+            <li><a href="index.html#work">Selected Work</a></li>
+            <li><a href="profile.html">Studio Profile</a></li>
+            <li><a href="contact.html">Contact Practice</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <div class="footer-nav-title">LOCATION</div>
+          <ul class="footer-links">
+            <li><span>Tuticorin, Tamil Nadu, India</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 SERA ASSOCIATES. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Vanilla JS Contact Form Validation & Success State
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('sera-contact-form');
+      const successState = document.getElementById('contact-success-state');
+
+      if (!form) return;
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const name = document.getElementById('user_name').value.trim();
+        const email = document.getElementById('user_email').value.trim();
+        const message = document.getElementById('user_message').value.trim();
+
+        if (!name || !email || !message) {
+          alert('Please complete all required fields (*)');
+          return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert('Please enter a valid email address.');
+          return;
+        }
+
+        // Hide Form with fade and show success toast
+        form.style.opacity = '0.3';
+        form.style.pointerEvents = 'none';
+        
+        setTimeout(() => {
+          form.style.display = 'none';
+          successState.classList.add('active');
+        }, 300);
+      });
+    });
+  </script>
+</body>
+</html>

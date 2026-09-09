@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SERA ASSOCIATES — Architectural project details, spatial sequence, and material specifications.">
+  <title>PROJECT — SERA ASSOCIATES</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header scrolled" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="SERA ASSOCIATES Homepage">
+        SERA ASSOCIATES
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html#work" class="nav-link active">WORK</a></li>
+          <li><a href="profile.html" class="nav-link">PROFILE</a></li>
+          <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" role="dialog" aria-label="Mobile menu">
+    <ul class="mobile-menu-links">
+      <li><a href="index.html#work">WORK</a></li>
+      <li><a href="profile.html">PROFILE</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+
+    <!-- DYNAMICALLY HYDRATED PROJECT CONTAINER -->
+    <article id="project-detail-content" class="project-detail-hero container">
+      <!-- Populated by js/project-detail.js -->
+    </article>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="footer-brand-title">SERA ASSOCIATES</div>
+          <p style="color: var(--text-light-muted); max-width: 420px; font-size: 0.95rem;">
+            Architecture, spaces and thoughtful construction.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <div class="footer-nav-title">NAVIGATION</div>
+          <ul class="footer-links">
+            <li><a href="index.html#work">Selected Work</a></li>
+            <li><a href="profile.html">Studio Profile</a></li>
+            <li><a href="contact.html">Contact Practice</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <div class="footer-nav-title">LOCATION</div>
+          <ul class="footer-links">
+            <li><span>Tuticorin, Tamil Nadu, India</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 SERA ASSOCIATES. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/project-detail.js"></script>
+</body>
+</html>

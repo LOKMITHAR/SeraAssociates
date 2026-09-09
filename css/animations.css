@@ -1,0 +1,91 @@
+/* ==========================================================================
+   SERA ASSOCIATES — Architectural Micro-Animations & Motion Design
+   ========================================================================== */
+
+/* Page Load Fade-in */
+body {
+  animation: pageFadeIn 800ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Scroll Reveal Elements */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 800ms cubic-bezier(0.16, 1, 0.3, 1), transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered Delay Helpers */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Image Scale Reveal Mask */
+.image-mask-reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-mask-reveal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-primary);
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 900ms cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.image-mask-reveal.revealed::after {
+  transform: scaleY(0);
+}
+
+/* SERA Letter Micro Hover Shift */
+.sera-letter-big span {
+  display: inline-block;
+  transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sera-letter-card:hover .sera-letter-big span {
+  transform: translateY(-4px);
+}
+
+/* Accessibility: Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  body,
+  .reveal-on-scroll,
+  .image-mask-reveal::after,
+  .hero-image-viewport img,
+  .project-card-image-wrap img,
+  .sera-letter-card,
+  .sera-letter-big span {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  
+  .scroll-indicator-line::after {
+    animation: none !important;
+  }
+}
