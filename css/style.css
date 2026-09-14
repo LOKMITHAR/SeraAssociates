@@ -4,6 +4,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap');
 
+/* Caviar Dreams Wordmark Font (Local woff with CDN fallback) */
+@font-face {
+  font-family: 'Caviar Dreams';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Caviar Dreams'), local('CaviarDreams'),
+       url('../assets/fonts/CaviarDreams.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/77/CaviarDreams.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Caviar Dreams';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Caviar Dreams Bold'), local('CaviarDreams_Bold'),
+       url('../assets/fonts/CaviarDreams_Bold.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/77/CaviarDreams_Bold.woff') format('woff');
+  font-display: swap;
+}
+
 :root {
   /* Architectural Color System */
   --bg-primary: #F4F3EF;       /* Warm off-white / Architectural paper */
@@ -27,6 +48,7 @@
   --font-display: 'Outfit', 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-title: 'Syne', 'Outfit', sans-serif;
   --font-serif: 'Instrument Serif', 'Cormorant Garamond', Georgia, serif;
+  --font-logo: 'Caviar Dreams', 'Comfortaa', 'Josefin Sans', sans-serif;
   
   /* Layout Spacing */
   --header-height: 84px;
@@ -223,14 +245,53 @@ button {
 }
 
 .brand-logo {
-  font-family: var(--font-title);
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  font-family: var(--font-logo);
   color: var(--text-primary);
   position: relative;
   z-index: var(--z-drawer);
+  line-height: 1;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.brand-logo:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.brand-logo .brand-name {
+  display: block;
+  font-family: var(--font-logo);
+  font-size: 1.65rem;
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--text-primary);
+  /* Stepped 3D architectural layered shadow from logo image */
+  text-shadow: 
+    -1px 1.5px 0 rgba(22, 22, 22, 0.45),
+    -2px 3px 0 rgba(22, 22, 22, 0.28),
+    -3px 4.5px 0 rgba(22, 22, 22, 0.15),
+    -4px 6px 0 rgba(22, 22, 22, 0.06);
+  transition: text-shadow var(--transition-fast);
+}
+
+.brand-logo .brand-sub {
+  display: block;
+  font-family: var(--font-logo);
+  font-size: 0.65rem;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.42em;
+  text-transform: none;
+  color: var(--text-primary);
+  margin-top: 0.22rem;
+  padding-left: 0.06em;
+  text-shadow: -0.6px 0.8px 0 rgba(22, 22, 22, 0.25);
 }
 
 .nav-menu {
@@ -1098,12 +1159,41 @@ button {
 }
 
 .footer-brand-title {
-  font-family: var(--font-title);
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: var(--font-logo);
+  margin-bottom: 1.25rem;
+}
+
+.footer-brand-title .brand-name {
+  display: block;
+  font-family: var(--font-logo);
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: #ECECEC;
+  text-shadow: 
+    -1.5px 2px 0 #7A7A7A,
+    -3px 4px 0 #4A4A4A,
+    -4.5px 6px 0 #282828,
+    -6px 8px 0 #141414;
+}
+
+.footer-brand-title .brand-sub {
+  display: block;
+  font-family: var(--font-logo);
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.42em;
+  text-transform: none;
+  color: #D4D2CD;
+  margin-top: 0.35rem;
+  padding-left: 0.06em;
+  text-shadow: -0.75px 1px 0 #4A4A4A;
 }
 
 .footer-nav-col {

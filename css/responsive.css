@@ -152,9 +152,13 @@
     display: flex;
   }
 
-  .brand-logo {
-    font-size: 0.85rem;
-    letter-spacing: 0.16em;
+  .brand-logo .brand-name {
+    font-size: 1.4rem;
+  }
+
+  .brand-logo .brand-sub {
+    font-size: 0.56rem;
+    letter-spacing: 0.38em;
   }
 
   /* Hero Section Mobile */
